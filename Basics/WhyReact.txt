@@ -1,0 +1,9 @@
+Imperative: A programming model where we describe the steps to achieve our result.
+
+Declarative: A programming model where we describe the result we want to achieve
+
+Component: A self-contained, reusable piece of our interface
+
+Keeping the Data Model and the DOM UI in synce can can be challenging in regular dev. 
+
+React makes this easier using a Virtual DOM. 

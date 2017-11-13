@@ -1,0 +1,28 @@
+JSX: An extension to the JavaScript language that provides an XML syntax.
+
+Babel.js: A compiler that creates standard, compatible JavaScript from code that utilizes new JavaScript features and JSX
+
+DOM elements have 3 things:
+    - The type of element (div, span, etc.)
+    - List of attributes (key/value pairs, type, href, etc.)
+    - Children (if they exist) - markup inside div, etc.
+    
+Describing a tag using React.createElement()
+Three Arguments
+        - The elements name, a string
+        - An object of keys/values that describing the attributes
+        - The children of our element (a string or more elements)
+        
+var myLink = React.createElement('a', {
+    href: "https://google.com"
+}, "Treehouse");
+
+
+JSX is an extension to the JavaScript language that allows us to use an XML style syntax to build our React.createElement calls.
+
+Updated to JSX:
+var myLink = (
+ <a href="https://google.com">
+    Treehouse
+ </a>
+);

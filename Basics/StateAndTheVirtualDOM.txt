@@ -1,0 +1,24 @@
+A react component will create a representation of its markup in JavaScript, using basic JavaScript data types, like objects, arrays, and strings. 
+
+This JavaScript representation of the DOM elements is called the Virtual DOM in react.
+
+
+DOM: (Document Object Model) The interface for managing the elements in an HTML page.
+
+
+Virtual DOM: A pure JavaScript representation of a DOM tree.
+
+When React renders our code to the real DOM, it will translate our virtual DOM elements
+into real DOM elements. 
+
+
+React tries to manipulate the real DOM as little as possible. 
+
+When the data changes, React compares the previous and current virtual DOM and
+figures out the minimal changes needed to update the real DOM. 
+
+So if we previously had a ordered list with two list items, and we needed to add
+a third, React reference the previous virtual DOM and adds a third LI item. 
+
+
+
