@@ -1,0 +1,14 @@
+A React component must return only a single virtual DOM element
+- True
+
+JSX syntax is the same as HTML in JavaScript files
+- False
+
+How would we create an instance of an Application component in JSX?
+- <Application />
+
+What tool do we use to translate JSX files into standard JavaScript?
+- Babel
+
+Which of these is not valid JSX?
+- <Application>

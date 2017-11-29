@@ -1,0 +1,19 @@
+What do we call the style of programming where we describe the final result, and not the steps?
+- Declarative
+
+React encourages you to manipulate the DOM directly
+- False
+
+What do we call the style of programming where we write everything out step by step?
+- Imperative
+
+
+What is React?
+- A library for creating user interfaces
+
+
+Updating the page's DOM is a slow operation
+- True
+
+
+    
