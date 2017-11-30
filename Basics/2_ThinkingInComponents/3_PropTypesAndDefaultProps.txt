@@ -1,0 +1,11 @@
+In react we can document exactly which properties our components take, 
+and what types they should be.
+
+Application.propTypes = {
+    title: React.PropTypes.string,
+};
+
+Application.defaultProps = {
+    title: "Scoreboard",
+}
+

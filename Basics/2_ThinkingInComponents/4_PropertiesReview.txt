@@ -1,0 +1,19 @@
+How would you assign a CSS class to a component in JSX?
+- <div className="player">...</div>
+
+Props passed to a component should not be changed by that component.
+- True
+
+propTypes are required on all components that take properties
+- False
+
+Fill in the code to ensure the property 'name' is a required string 
+for the player component:
+
+    Player.propTypes = {
+      name: React.PropTypes.string.isRequired,
+    }
+   
+   
+You can use if/else statements inside JSX expressions
+- False

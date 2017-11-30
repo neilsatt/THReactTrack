@@ -1,0 +1,13 @@
+Pass into the main function:
+
+function Application(props) 
+
+
+Then you can use it in your application:
+
+<h1>{props.title}</h1>
+
+
+ReactDOM.render(
+    <Application title="Scoreboards"/>, document.getElementById('container')
+);
