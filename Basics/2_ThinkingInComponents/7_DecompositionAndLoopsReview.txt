@@ -1,0 +1,12 @@
+When should we break a component into smaller components?
+- Too much markup, does too many things, when it will be reused
+
+Which function allows you to create a list of JSX elements from an array
+of JavaScript values?
+- array.map
+
+You can use a JavaScript for loop to iterate over items inside a JSX expression
+- False
+
+Which property is required on components generated in a loop?
+- key
