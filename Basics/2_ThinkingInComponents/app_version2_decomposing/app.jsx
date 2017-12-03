@@ -2,9 +2,29 @@
 
     - Header
     - Player
-    - 
-    
+    - Counter 
+    - Then we'll refactor to make a Player Array of Objects,
+        Loop through it using the map function (line 77)
+        maps a player object to a player component 
 */
+
+var PLAYERS = [
+    {
+        name: 'Jim Saylor',
+        score: 23,
+        id: 1,
+    },
+    {
+        name: 'Riley Godren',
+        score: 29,
+        id: 2,
+    },
+    {
+        name: 'Bob Gordon',
+        score: 43,
+        id: 3,
+    },
+]
 
 function Header(props) {
     return(
@@ -55,13 +75,13 @@ Player.propTypes = {
 function Application(props) {
   return (
       <div className="scoreboard">
-     
-        <Header title={props.title}/> 
-          
+        <Header title={props.title}/>  
           
          <div className="players">
-             <Player name="Jim Saylor" score={23}/> 
-             <Player name="Riley Godren" score={44}/> 
+             {props.players.map(function(player) {
+                 return <Player name={player.name} score={player.score} key={player.id}/>   
+             })}
+
          </div>
       </div>
   ); 
@@ -69,6 +89,11 @@ function Application(props) {
 
 Application.propTypes = {
     title: React.PropTypes.string,
+    players: React.PropTypes.arrayOf(React.PropTypes.shape({
+        name: React.PropTypes.string.isRequired, 
+        score: React.PropTypes.number.isRequired,
+        id: React.PropTypes.number.isRequired,
+    })).isRequired,
 };
 
 Application.defaultProps = {
@@ -76,6 +101,6 @@ Application.defaultProps = {
 }
 
 ReactDOM.render(
-    <Application />, document.getElementById('container')
+    <Application players={PLAYERS}/>, document.getElementById('container')
 );
 
