@@ -1,0 +1,4 @@
+Stateless Functional Component: A component defined as a function. 
+It takes only props as an argument and returns a virtual DOM.
+
+Component Class: A component definition that can include things like state, helper methods and other advanced hooks into the page’s DOM

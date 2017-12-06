@@ -1,0 +1,14 @@
+How should you set an initial state value for a component?
+- Write a getInitialState method and return the initial state values
+
+Element.addEventListener is common in components
+- False
+
+The React community has several state management libraries
+- True
+
+When using 'React.class' you do not need to call '.bind' for the 'this' reference
+- True
+
+How would you update the 'color' property of a state object?
+- this.setState({color: 'blue'})

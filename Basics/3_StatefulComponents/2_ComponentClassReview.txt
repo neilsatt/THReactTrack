@@ -1,0 +1,15 @@
+Which of these has a special meaning in a React Component Class?
+- render
+
+Which function allows you to create a new React Component Class?
+- React.createClass()
+
+Any Stateless Function Component could be written as a Component Class
+- True
+
+How would you refer to a component's name property in a Component Class?
+- this.props.name
+
+A Component Class's property types must be specified after it is defined
+by assigning to MyComponent.propTypes
+- False
