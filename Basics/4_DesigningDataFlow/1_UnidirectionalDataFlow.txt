@@ -13,4 +13,6 @@ This is state that is used to allow a component to function. Local component sta
 in the application, and is less important to persist if the application resets.
 
 
-We'll estructure our state to concentrate our state in a single location. We will rebuild one of our stateful components into a simple functional component and concentrate our state in a single location
+We'll structure our state to concentrate our state in a single location. 
+We will rebuild one of our stateful components into a simple functional component and 
+concentrate our state in a single location

@@ -1,0 +1,15 @@
+We usually want to concentrate our application state high in our virtual DOM tree. 
+- True
+
+How does data flow in a react application?
+- From parent to child via properties
+
+In a react application, components commonly communicate with their children by calling methods on them.
+- False
+
+Application State is defined as state needed locally for a component to serve its function
+- False
+
+How do we communicate events up through the DOM tree in a standard React Application?
+- Provide callback functions as properties to components
+

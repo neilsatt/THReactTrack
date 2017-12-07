@@ -1,0 +1,3 @@
+While data flows down, events and communication flows up. 
+This completes the loop of events that can change data bubbling up 
+and the updated state data flowing back down to be displayed.
