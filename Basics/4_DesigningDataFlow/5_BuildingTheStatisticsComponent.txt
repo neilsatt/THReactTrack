@@ -1,0 +1,2 @@
+Now that we have our state consolidated in a single place, we can use it to build more components. 
+In this video we will build a component that summarizes the data in the game.

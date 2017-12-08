@@ -1,0 +1,5 @@
+Build a component that will allow us to add players and update our 
+player component to be able to remove the player.
+
+Controlled Component: An input form is controlled when it’s value is passed to it by the parent component. 
+This requires us to update the passed value when it changes by listening for the onChange event of the input component.
