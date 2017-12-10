@@ -1,0 +1,12 @@
+The state called 'name' in our AddPlayerForm component would be considered
+- Local Component State
+
+Which of the following components in our Application currently holds state?
+- AddPlayerForm
+
+Where does all of our application state live?
+- Application
+
+How do we define a property called onChange that is a required function for a 
+Counter component?
+- {onChange: React.PropTypes.func.isRequired}
