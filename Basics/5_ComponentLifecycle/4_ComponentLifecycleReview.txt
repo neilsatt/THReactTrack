@@ -1,0 +1,11 @@
+Which method should hold cleanup code that needs to be executed when the module is removed from the DOM?
+- componentWillUnmount()
+
+Which method should hold code that needs to be executed only when the module is first loaded into the DOM?
+- componentDidMount()
+
+You can use if / else statements within JSX { } expressions.
+- False
+
+It is acceptable to modify your state information in the render() method to make it acceptable for display.
+- True

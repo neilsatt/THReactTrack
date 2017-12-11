@@ -1,0 +1,15 @@
+Which is NOT true about Application State
+- It is only store in the component called Application
+
+React focuses on building user interfaces in what paradigm?
+- Declaritive
+
+JSX is required when writing React code
+- False
+
+Which of the following is a tool to help manage state in large React apps?
+- Redux
+
+How do we pass data around a React application?
+- Component Properties
+
