@@ -1,0 +1,4 @@
+In single-page apps (SPAs), routing is responsible for loading and unloading content while matching the URL 
+with the set of components being rendered. 
+
+Routing should also keep track of browser history and link users to specific sections of your app.
