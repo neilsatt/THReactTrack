@@ -1,0 +1,22 @@
+Which component can redirect from one route to another route?
+- <Redirect>
+
+Which <Route path> prop contains information about how a route matched the URL?
+- match
+
+
+Given this route: 
+<Route path='/products' render={() => <Redirect to='/products/books' />} /> 
+Which of the following is true?
+- The route renders a redirect to '/products/books' when the URL is '/products'
+
+
+The _____ prop assigns a custom CSS class to NavLink when it's active.
+- activeClassName
+
+Which React Router component allows users to navigate between routes?
+- not switch or route
+
+Which component lets you add styling to a link when it matches the current URL.
+- <NavLink>
+
