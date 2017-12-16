@@ -2,4 +2,4 @@ What is the React-Redux library?
 - It provides a number of helper methods that make it
 easier to connect Redux to your React application.
 
-- 
+-
