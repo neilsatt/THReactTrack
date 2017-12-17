@@ -1,0 +1,15 @@
+A pure component is:
+ A component known as a stateless function in React because it does
+ not manage its own state.
+
+Which are true about logical components?
+- They will often render a view but will also take part in React lifecycle events
+  and/or manage an internal state.
+
+You may only have one container component in an application.
+- False. You may have several container components that propagate data
+down to presentational components
+
+What is a good pattern to follow when building your components?
+- Start with components that have no dependency on other components
+  and work backwards from there.
