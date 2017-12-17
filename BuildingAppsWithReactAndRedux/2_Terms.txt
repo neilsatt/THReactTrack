@@ -1,0 +1,26 @@
+Container Component:
+  Redux aware component that usually defines no markup of its own but instead relies on composing
+  presentational components into a cohesive UI.
+
+Logical Component - React Component that manages own state.
+  Presentational component that has its own state to manage and may or may not make use of
+  React lifecycle events. Concerned with how things look. Doesn't care if we use Redux.
+
+Pure Component - Stateless functions that rely on props. Are pure functions that don't take place in
+                  in React lifecycle.
+  Presentation component that is implemented as a pure function. These components are passed props and
+  return markup, no questions asked, no side-effects. That means they do not manage a state of their own
+  and do not take part in React life cycle events.
+
+Component Hierarchy:
+  A composition of React components represented as a tree that depicts the component structure.
+
+In our Scoreboard application:
+  Stopwatch - Logical components since they have no dependencies and manage their own state.
+  Stats and Counter - Pure components, since they are written as pure functions and rely on
+                      props passed down to them.
+  Scoreboard app (player and header) - Pure components since they depend on other components
+                                       and act as dependencies to other components.
+
+  The Scoreboard.js file will be our root component and act as the container component that passes
+  data down to other components. 
