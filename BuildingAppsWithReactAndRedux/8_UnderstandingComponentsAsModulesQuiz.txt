@@ -1,0 +1,12 @@
+Why should you break your React coponents into modules?
+- It provides separation of UI responsibilities and better scalability.
+
+What are advantages of breaking an application into modules?
+- Easier to maintain and debug code.
+
+Defining all components in one location is ok for a demo, but what are some of
+the issues you will encounter when the application begins to grow?
+- Debugging and Testing, unwieldy, error-prone and time-consuming.
+
+Which of the following is not true about modules?
+- Modules require advanced knowledge of JavaScript.
