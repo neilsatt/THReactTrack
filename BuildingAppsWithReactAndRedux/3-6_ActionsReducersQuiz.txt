@@ -13,7 +13,5 @@ An Action is usually comprised of a type and:
 Example of an action type:
 - const SELECT_PLAYER = 'player/SELECT_PLAYER'
 
-
 Immutability is one of the key principles of Redux, which is achieved by implementing reducers as ________ function that do not mutate state.
-
 - pure

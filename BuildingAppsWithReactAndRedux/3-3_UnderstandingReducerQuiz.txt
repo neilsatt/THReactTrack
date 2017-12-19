@@ -10,6 +10,5 @@ You write a reducer as a pure function that takes which two arguments:
 What is the role of a reducer?
 - Interpret the actions that occur within your app and produce a new state for specific data
 
-
 In Redux, an action returns a new state via a
 - Reducer
