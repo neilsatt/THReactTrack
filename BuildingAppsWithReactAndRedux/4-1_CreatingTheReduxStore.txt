@@ -1,0 +1,9 @@
+The Redux Store contains the entire application state
+
+It's a composition of all the reducers we've defined,
+that then becomes one single state container for our application.
+
+In the scoreboard application, our store consists of only one reducer,
+
+0:51
+the player reducer.
