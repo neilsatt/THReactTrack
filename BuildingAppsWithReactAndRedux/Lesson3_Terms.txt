@@ -1,0 +1,18 @@
+Action Type:
+An action type in Redux represents an explicit action type that will
+occur within the application. It is expressed in JavaScript as a string constant.
+
+Reducer:
+A Redux construct that is responsible for maintaining a specific portion of the
+Redux store, which holds the app's state. In JavaScript, a reducer is implemented as a pure function
+that takes two arguments, the current state and the action being taken, and produces the next state.
+In order for Redux to work properly, Reducers must not mutate the current state. In other words, the state
+for a reducer must be treated as immutable.
+
+
+Actions:
+Explicit events that occur in our application represented by a type and any relevant metadata associated
+with the action.
+
+Action Creators:
+In Redux, a construct for generating an action.

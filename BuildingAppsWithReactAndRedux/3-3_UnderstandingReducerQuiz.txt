@@ -1,0 +1,15 @@
+In a reducer's switch statement, what should the default case be?
+- The current state
+
+A reducer should be implemented as a pure function.
+- True
+
+You write a reducer as a pure function that takes which two arguments:
+- The current state and the action taken
+
+What is the role of a reducer?
+- Interpret the actions that occur within your app and produce a new state for specific data
+
+
+In Redux, an action returns a new state via a
+- Reducer

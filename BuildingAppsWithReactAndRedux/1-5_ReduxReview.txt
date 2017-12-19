@@ -1,0 +1,7 @@
+What is the React-Redux library?
+- It provides a number of helper methods that make it
+easier to connect Redux to your React application.
+
+Why does Redux make your application more reliable and stable?
+- Redux provides a single source of truth for your application, making
+it easier to keep application state in sync and distribute data

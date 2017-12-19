@@ -1,0 +1,19 @@
+An action in Redux refers to:
+- An event that Redux uses to determine how application state will be affected
+
+An action creator is used to:
+- Generate an action that gets dispatched to the Redux store
+
+What is the Redux Store?
+- A single source of truth for the application state
+
+An Action is usually comprised of a type and:
+- Metadata used to determine how application state will be affected
+
+Example of an action type:
+- const SELECT_PLAYER = 'player/SELECT_PLAYER'
+
+
+Immutability is one of the key principles of Redux, which is achieved by implementing reducers as ________ function that do not mutate state.
+
+- pure
