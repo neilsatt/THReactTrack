@@ -12,7 +12,8 @@ import Scoreboard from './src/containers/Scoreboard';
 */
 
 const store = createStore(
- PlayerReducer
+ PlayerReducer,
+ window.devToolsExtension && window.devToolsExtension()
 );
 
 /*
