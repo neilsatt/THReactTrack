@@ -1,4 +1,7 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
+import { bindActionCreators} from 'redux';
+import {connect } from 'react-redux';
+import * as PlayerActionCreators from '../actions/player';
 import Stopwatch from '../components/Stopwatch';
 import Counter from '../components/Counter';
 import Stats from '../components/Stats';
@@ -8,59 +11,51 @@ import Header from '../components/Header';
 
 
 
-export default class Scoreboard extends Component{
-
-  state = {
-    players: [
-      {
-        name: 'Jim Hoskins',
-        score: 31,
-      },
-      {
-        name: 'Andrew Chalkley',
-        score: 20,
-      },
-      {
-        name: 'Alena Holligan',
-        score: 50,
-      },
-    ],
-  };
-
-  onScoreChange = (index, delta) => {
-    this.state.players[index].score += delta;
-    this.setState(this.state);
-  };
-
-  onAddPlayer = (name) => {
-    this.state.players.push({ name: name, score: 0 });
-    this.setState(this.state);
-  };
-
-  onRemovePlayer = (index) => {
-    this.state.players.splice(index, 1);
-    this.setState(this.state);
-  };
+class Scoreboard extends Component{
+   static propTypes = {
+      players: PropTypes.array.isRequired
+   };
 
   render () {
+
+    const {dispatch, players } = this.props;
+    const addPlayer = bindActionCreators(PlayerActionCreators.addPlayer, dispatch);
+    const removePlayer = bindActionCreators(PlayerActionCreators.removePlayer, dispatch);
+    const updatePlayerScore = bindActionCreators(PlayerActionCreators.updatePlayerScore, dispatch);
+
+    const playerComponents = players.map((player, index) => (
+      <Player
+        index={index}
+        name={player.name}
+        score={player.switch}
+        key={player.name}
+        updatePlayerScore={updatePlayerScore}
+        removePlayer={removePlayer}
+      />
+    ))
     return (
       <div className="scoreboard">
-        <Header players={this.state.players} />
+        <Header players={players} />
         <div className="players">
-          {this.state.players.map(function(player, index) {
-             return (
-               <Player
-                 name={player.name}
-                 score={player.score}
-                 key={player.name}
-                 onScoreChange={(delta) => this.onScoreChange(index, delta)}
-                 onRemove={() => this.onRemovePlayer(index)}
-               />
-             );
-           }.bind(this))}
+            {playerComponents}
         </div>
-        <AddPlayerForm onAdd={this.onAddPlayer} />
+        <AddPlayerForm addPlayer={addPlayer} />
       </div>
     );
   }
 };
+
+const mapStateToProps = state => (
+  {
+    players: state
+  }
+);
+
+/* Subscribe Scoreboard to any changes in state or any Redux store updates
+   results passed as a prop to scoreboard.
+   Any time our underlying player state changes,
+   it will be mapped to a property called players.
+   That is injected into our Scoreboard container making it
+   available to any downstream components.
+ */
+export default connect(mapStateToProps)(Scoreboard);

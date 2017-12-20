@@ -1,0 +1,10 @@
+Bound Action Creator: An action creator that generates and action and
+is immediately dispatched to the Redux store.
+
+- They package action creators into ready-to-use methods
+- Eliminate the need to pass dispatch down to
+  every child component
+- Provide a way for components to invoke an action and
+  dispatch it all at once
+
+  bindActionCreators(actionCreators, dispatch)
