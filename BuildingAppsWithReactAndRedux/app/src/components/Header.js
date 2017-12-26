@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import Stats from './Stats';
-import Stopwatch from  './Stopwatch';
+import Stopwatch from './Stopwatch';
 
-const Header = props =>  {
+const Header = props => {
   return (
     <div className="header">
       <Stats players={props.players} />
@@ -10,12 +10,10 @@ const Header = props =>  {
       <Stopwatch />
     </div>
   );
-}
-
-Header.propTypes = {
-  players: React.PropTypes.array.isRequired,
 };
 
-
+Header.propTypes = {
+  players: PropTypes.array.isRequired
+};
 
 export default Header;

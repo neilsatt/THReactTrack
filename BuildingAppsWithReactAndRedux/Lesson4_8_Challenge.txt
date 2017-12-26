@@ -1,0 +1,33 @@
+Challenge Steps:
+In the 'actiontypes/player.js' file, add and export a new action for SELECT_PLAYER
+
+Define a reducer that will interpret the SELECT_PLAYER action and produce a new state for the playerDetail data
+
+In 'reducers/player.js', in the ADD_PLAYER switch block, set the newly added player’s created value to the current date
+
+Add a switch case for the new SELECT_PLAYER action type. You'll need to set the selectedPlayerIndex to the value passed
+in -- for example, with action.index.
+
+In the UPDATE_PLAYER_SCORE switch case, set the player's updated value to the current date
+
+In 'actions/player.js', create the action creator for the selectPlayer action. The new action creator should take an index
+argument and generate an action object with a type of SELECT_PLAYER and provide the index as the action metadata.
+
+In the Scoreboard component, don't forget to update the mapStateToProps method to account for the selectedPlayerIndex and,
+in the render method, pull selectedPlayerIndex off this.props
+
+Add a new bound action creator for the selectPlayer action creator
+
+Use the index to pull out just the selectedPlayer from the players array if the selectedPlayerIndex is not -1
+(a conditional would work great for this)
+
+Pass the selectPlayer bound action creator to the player component and, in the return statement, the prop provided to PlayerDetail
+should be the selelectedPlayer object
+
+In the new PlayerDetail component, use the data being passed via the selectedPlayer prop to display the name, score, created,
+and updated data, if the selectedPlayer prop is being passed. Otherwise, it should display the paragraph "Click on a player to
+see more details".
+
+When you click on a player, it should display the details for that player in the PlayerDetail component. In the Player component,
+you'll devise a way to detect an onClick for a player that invokes the selectPlayer bound action creator
+The function you write should provide the index of the player as an argument -- similar to the onClick for removePlayer

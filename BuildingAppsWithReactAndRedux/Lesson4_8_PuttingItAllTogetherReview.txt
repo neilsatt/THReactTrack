@@ -1,0 +1,13 @@
+Redux Provides a __________ state container.
+- predictable
+
+You can use Redux DevTools to dispatch actions, without having to interact with the application UI.
+- True
+
+The createStore() method:
+- Registers your reducers with Redux, and creates a Redux store that
+holds your application's state
+
+
+Which feature in Redux DevTools lets you step forward and backward through application state?
+- The slider feature
