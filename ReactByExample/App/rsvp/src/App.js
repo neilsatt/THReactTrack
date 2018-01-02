@@ -2,25 +2,48 @@ import React, { Component } from 'react';
 import './App.css';
 import GuestList from './GuestList';
 
-
 class App extends Component {
 
- state = {
-   guests: [
-     {
-       name: 'Ted',
-       isConfirmed: false
-     },
-     {
-       name: 'Sandra',
-       isConfirmed: true
-     }
-   ]
- }
+  state = {
+    guests: [
+      {
+        name: 'Treasure',
+        isConfirmed: false
+      },
+      {
+        name: 'Nic',
+        isConfirmed: true
+      },
+      {
+        name: 'Matt K',
+        isConfirmed: false
+      }
+    ]
+  };
 
- getTotalInvited = () => this.state.guest.length;
- // getAttendingGuests = () =>
- // getUnconfirmedGuests = () =>
+  toggleGuestPropertyAt = (property, indexToChange) =>
+    this.setState({
+      guests: this.state.guests.map((guest, index) => {
+        if (index === indexToChange) {
+          return {
+            ...guest,
+            [property]: !guest[property]
+          };
+        }
+        return guest;
+      })
+    });
+
+    toggleConfirmationAt = index =>
+      this.toggleGuestPropertyAt("isConfirmed", index);
+
+    toggleEditingAt = index =>
+        this.toggleGuestPropertyAt("isEditing", index);
+
+  getTotalInvited = () => this.state.guests.length;
+  // getAttendingGuests = () =>
+  // getUnconfirmedGuests = () =>
+
   render() {
     return (
       <div className="App">
@@ -28,8 +51,8 @@ class App extends Component {
           <h1>RSVP</h1>
           <p>A Treehouse App</p>
           <form>
-              <input type="text" value="Safia" placeholder="Invite Someone" />
-              <button type="submit" name="submit" value="submit">Submit</button>
+            <input type="text" value="Safia" placeholder="Invite Someone" />
+            <button type="submit" name="submit" value="submit">Submit</button>
           </form>
         </header>
         <div className="main">
@@ -55,7 +78,11 @@ class App extends Component {
               </tr>
             </tbody>
           </table>
-        <GuestList />
+
+          <GuestList
+            guests={this.state.guests}
+            toggleConfirmationAt={this.toggleConfirmationAt}
+            toggleEditingAt={this.toggleEditingAt} />
         </div>
       </div>
     );

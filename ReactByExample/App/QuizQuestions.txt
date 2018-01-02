@@ -1,0 +1,24 @@
+What property does React use to help identify which items have changed,
+are added or are removed?
+- key
+
+What is one way to copy all of an objects properties into a new
+object literal?
+- By using the object spread (...) operator
+
+When a user clicks a connected form element in a React app...
+- the state is set first, then the element changes to show the new state
+
+What React library ensures the props passed into a component is the
+type your program expects?
+- prop-types
+
+To get data from a child component to a parent, no configuration
+is necessary.
+- False. You need to define a callback and pass it down to the
+child, and bind it to one of the child's events.
+
+A function loses access to the scope it was defined in when it
+executes in a different scope.
+- False. Functions retain access to the scope in which they were
+defined. This is know as a closure.
