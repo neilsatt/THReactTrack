@@ -22,3 +22,23 @@ A function loses access to the scope it was defined in when it
 executes in a different scope.
 - False. Functions retain access to the scope in which they were
 defined. This is know as a closure.
+
+
+--------------------------------------------------
+A callback that is bound to an event on a DOM element receives what object
+when that event occurs?
+-  an event object containing info about the event
+
+If value is a variable, what does !value evaluate to?
+- It evaluates to true when value is false.
+
+What is one way to create a copy of an array while removing some of its elements?
+- The filter method on JS arrays
+
+When a user clicks the 'edit' button, how is our app finding the corresponding
+array element in the state?
+- The handler has been given the array element's index through a closure.
+
+If the variable isFiltered is false, what would the following expression
+evaluate to? !isFiltered && 'showAll'
+- the string 'showAll'
