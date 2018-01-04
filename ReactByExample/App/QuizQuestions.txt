@@ -42,3 +42,36 @@ array element in the state?
 If the variable isFiltered is false, what would the following expression
 evaluate to? !isFiltered && 'showAll'
 - the string 'showAll'
+
+
+-------------------------------------------------------
+To pass data to a child component from its parent, where
+does that data need to go?
+- On the child's props
+
+How can props.data be accessed from within the Widget component?
+<Widget>
+  {props.data}
+</Widget>
+- props.children
+
+To allow a child component to change its parent's state in response
+to user events, where does the event handler need to be defined?
+- On the parent
+
+In React, you can render or remove an element depending on the existence
+of a piece of data in the state.
+- True
+
+What is a common use for the reduce() method?
+- Deriving a value other than an array from elements within an array.
+
+----------------------------------------------------------------------
+Why was the app not able to target the correct component when the filter was engaged?
+- because rendering fewer elements potentially assigned different indexes than the corresponding guests in the app state
+
+If you `import` or `require` from a directory rather than a file, what file inside that directory will JavaScript look for by default?
+- index.js
+
+How did we fix the filter bug?
+- By creating IDs for each guest that were independently generated from the array index
