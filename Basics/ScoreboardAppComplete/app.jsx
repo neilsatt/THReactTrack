@@ -114,8 +114,6 @@ var AddPlayerForm = React.createClass({
   }
 });
 
-
-{/*  Stats Component and propTypes */}
 function Stats(props) {
   var totalPlayers = props.players.length;
   var totalPoints = props.players.reduce(function(total, player){
@@ -142,8 +140,6 @@ Stats.propTypes = {
   players: React.PropTypes.array.isRequired,
 };
 
-
-{/*  Header Component and propTypes */}
 function Header(props) {
   return (
     <div className="header">
@@ -159,8 +155,6 @@ Header.propTypes = {
   players: React.PropTypes.array.isRequired,
 };
 
-
-{/*  Counter Component and propTypes */}
 function Counter(props) {
   return (
     <div className="counter">
@@ -176,7 +170,6 @@ Counter.propTypes = {
   onChange: React.PropTypes.func.isRequired,
 }
 
-{/*  Player Component and propTypes */}
 function Player(props) {
   return (
     <div className="player">
@@ -199,9 +192,7 @@ Player.propTypes = {
 };
 
 
-{/*  Main Application Class and PropTypes
-    arrayOf(shape) = initialPlayers has to be a specific object
-  */}
+
 var Application = React.createClass({
   propTypes: {
     title: React.PropTypes.string,
@@ -212,8 +203,6 @@ var Application = React.createClass({
     })).isRequired,
   },
 
-
-{/*  Application Methods */}
   getDefaultProps: function() {
     return {
       title: "Scoreboard",
